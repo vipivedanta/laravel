@@ -22,4 +22,4 @@ Route::get('about',function(){
 });
 
 //contact page
-Route::get('contact','Pages@contact');
+Route::get('contact','PagesController@contact');
