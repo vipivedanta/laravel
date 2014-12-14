@@ -15,3 +15,11 @@ Route::get('/', function()
 {
 	return View::make('hello');
 });
+
+//My about page
+Route::get('about',function(){
+	return View::make('about');
+});
+
+//contact page
+Route::get('contact','Pages@contact');
