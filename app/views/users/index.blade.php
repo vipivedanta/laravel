@@ -1,4 +1,7 @@
-<table border="1">
+@extends('layouts.user')
+
+@section('content')
+<table class="table table-striped table-bordered table-condensed">
 	<th>Name</th>
 	<th>E Mail</th>
 	<th>User name</th>
@@ -15,3 +18,13 @@
 </table>
 
 {{link_to_route('users.create','Add new user')}}
+<input type="button" value="Submit" class="btn btn-primary" />
+@stop
+
+@section('side-menu')
+<ul class="nav nav-pills">
+  <li role="presentation" class="active"><a href="#">Home</a></li>
+  <li role="presentation"><a href="#">Profile</a></li>
+  <li role="presentation"><a href="#">Messages</a></li>
+</ul>
+@stop
