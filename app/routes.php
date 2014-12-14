@@ -23,3 +23,6 @@ Route::get('about',function(){
 
 //contact page
 Route::get('contact','PagesController@contact');
+
+//users
+Route::resource('users','UsersController');
