@@ -9,7 +9,8 @@ class UsersController extends BaseController {
 	 */
 	public function index()
 	{
-		echo 'you reached';
+		$users = User::all();
+		return View::make('users.index',compact('users'));
 	}
 
 
@@ -43,7 +44,7 @@ class UsersController extends BaseController {
 	 */
 	public function show($id)
 	{
-		//
+		echo $id.' is your user';
 	}
 
 
@@ -79,7 +80,7 @@ class UsersController extends BaseController {
 	 */
 	public function destroy($id)
 	{
-		//
+		echo 'destroying';
 	}
 
 
